@@ -5,11 +5,11 @@ change.
 
 ## Current Phase
 
-- Complete
+- Phase 02: Editor Shell
 
 ## Current Goal
 
-- Add design system and UI primitives using shadcn/ui and lucide-react (completed)
+- Implement base editor chrome components (Navbar and Project Sidebar)
 
 ## Completed
 
@@ -17,14 +17,18 @@ change.
 - Added `lib/utils.ts` `cn()` helper
 - Implemented components under `components/ui/`: `Button`, `Card`, `Dialog`, `Input`, `Tabs`, `Textarea`, `ScrollArea`
 - Ran TypeScript and ESLint checks and fixed issues
+- Created `components/editor/editor-navbar.tsx` with sidebar toggle
+- Created `components/editor/project-sidebar.tsx` with floating layout and tabs
+- Validated new components compile with no TypeScript or ESLint errors
+- Integrated Editor Navbar and Project Sidebar into `components/editor/editor-layout.tsx` and updated `app/page.tsx`
 
 ## In Progress
 
-- None
+- Next phase planning
 
 ## Next Up
 
-- None — design system primitives added; consider visual verification in the running app
+- Test the editor shell visually
 
 ## Open Questions
 
@@ -34,6 +38,7 @@ change.
 
 - Use a small `cn()` helper in `lib/utils.ts` to merge Tailwind classes without adding extra runtime deps
 - Install `lucide-react` despite peer range differences by installing with `--legacy-peer-deps` due to React 19 usage
+- Implement floating sidebar pattern instead of push pattern to maximize canvas space.
 
 ## Session Notes
 
