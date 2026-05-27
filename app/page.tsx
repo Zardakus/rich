@@ -1,7 +1,11 @@
+import { EditorLayout } from "@/components/editor/editor-layout";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1>Reach AI</h1>
-    </div>
+    <EditorLayout>
+      <div className="flex h-full items-center justify-center">
+        <h1 className="text-zinc-500">Editor Canvas</h1>
+      </div>
+    </EditorLayout>
   );
 }
